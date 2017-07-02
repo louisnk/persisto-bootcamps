@@ -47,8 +47,9 @@
     <header id="first">
         <div class="header-content">
             <div class="inner">
-                <h1 class="cursive wow flipInX" style="visibility: visible; animation-name: flipInX;">Tbilisil Georgia Youth Code Camp</h1>
-                <h4>An all expenses paid trip September 16, 2017 - October 15, 2017, to Tbilisi, Georgia</h4>
+                <h1 class="cursive wow flipInX" style="visibility: visible; animation-name: flipInX;">Tbilisi Georgia <hr> Youth Code Camp</h1>
+                <br />
+                <h4>An all expenses paid trip September 16, 2017 - October 15, 2017 to Tbilisi, Georgia</h4>
                 <hr>
                 <a href="#Intro" class="btn btn-primary btn-xl page-scroll">What's it all about?</a>
             </div>
@@ -75,9 +76,12 @@
                         learn to creatively problem solve on a team while learning to build simple
                         web applications using Javascript, HTML, and CSS.
                     </p>
+                    <br />
                     <a href="#Details"
                         class="btn btn-default btn-xl page-scroll wow fadeIn"
-                        style="visibility: hidden; animation-name: none;">Learn More</a>
+                        style="visibility: hidden; animation-name: none;">
+                        Learn More
+                    </a>
                 </div>
             </div>
         </div>
@@ -312,10 +316,14 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="margin-top-0 wow fadeIn" style="visibility: hidden; animation-name: none;">Interested?</h2>
                     <hr class="primary">
-                    <p>We're excited to meet you, please provide your name, a valid email, and a link to your LinkedIn or Github profile to be considered as a mentor.</p>
+                    <p>We're excited to meet you!</p>
+                    <p>Please provide your name, a valid email, and a link to your LinkedIn or Github profile to be considered as a mentor.</p>
+                    <p>Anything else you want us to know, please include in the additional message below.</p>
                 </div>
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <form class="contact-form row" action="://localhost:8888/signup">
+                    <form class="contact-form row"
+                        action="https://im0n0cwx2b.execute-api.us-east-1.amazonaws.com/dev/signup"
+                        method="POST">
                         <div class="col-md-4">
                             <label></label>
                             <input type="text" name="name" class="form-control" placeholder="Name">

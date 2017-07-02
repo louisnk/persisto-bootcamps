@@ -70,7 +70,7 @@ class Service {
 module.exports.post = (event, context, callback) => {
   console.log(event)
   let body = event && event['body'];
-  let params = body; //qs.parse(body);
+  let params = isPlainObject(body) ? body : qs.parse(body);
   let service = new Service();
 
   let name = params.name && params.name.split(/ '-/).join('') + '-' + new Date().getTime();
@@ -82,7 +82,7 @@ module.exports.post = (event, context, callback) => {
   ].map((email, i) =>
     service.prepEmail(params, email.email, email.mentor));
 
-  console.log(params);
+  console.log('Using params: ', params);
 
   service.uploadToS3(params, name)
     .then(done => {

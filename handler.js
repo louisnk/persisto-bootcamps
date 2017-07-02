@@ -76,13 +76,13 @@ module.exports.post = (event, context, callback) => {
   let name = params.name && params.name.split(/ '-/).join('') + '-' + new Date().getTime();
 
   let toSend = [
-    // { email: params.email },
-    { email: config.emails.louis, mentor: true },
-    { email: config.emails.misha, mentor: true }
+    { email: params.email, mentor: true },
+    { email: config.emails.louis },
+    { email: config.emails.misha }
   ].map((email, i) =>
     service.prepEmail(params, email.email, email.mentor));
 
-  console.log(params)
+  console.log(params);
 
   service.uploadToS3(params, name)
     .then(done => {
@@ -95,6 +95,18 @@ module.exports.post = (event, context, callback) => {
       console.error('ERROR - ', err);
       return callback(formatErrorHelper(err.message));
     });
+};
+
+module.exports.test = (event, context, callback) => {
+  let query = event['queryStringParameters'];
+  console.log('query - ', query, event);
+
+  let res = {
+    statusCode: 200,
+    body: JSON.stringify(query)
+  }
+
+  return callback(null, res);
 };
 
 const formatSuccessHelper = (response) => {

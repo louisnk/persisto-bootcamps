@@ -44,6 +44,16 @@ functions:
             profile: $input.body('profile')
             additional: $input.body('additional')
 
+  test:
+    handler: handler.test
+    events:
+      - http:
+          path: test
+          method: get
+          queryParameters:
+            message: $input.body('message')
+
+
 # resources:
 #   Resources:
       # pathmapping:

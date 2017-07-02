@@ -1,0 +1,29 @@
+{
+  "name": "persisto-bootcamps",
+  "version": "0.1.0",
+  "description": "The codebase related to running Persisto Youth Programs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louisnk/persisto-bootcamps.git"
+  },
+  "author": "Louis Kinley, Persisto HK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louisnk/persisto-bootcamps/issues"
+  },
+  "homepage": "https://github.com/louisnk/persisto-bootcamps#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.80.0",
+    "chai": "^4.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "serverless": "^1.16.1",
+    "swagger": "^0.7.5",
+    "swagger-codegen": "^0.1.1"
+  }
+}

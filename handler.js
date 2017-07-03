@@ -122,7 +122,7 @@ const formatRedirectSuccess = (sent) => {
     statusCode: 302,
     body: "",
     headers: {
-      "Location": "https://learn.persisto.systems/thankyou"
+      "Location": "https://persisto.education/thankyou.html"
     }
   }
 };

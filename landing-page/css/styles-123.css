@@ -348,6 +348,7 @@ textarea {
     resize: none;
 }
 
+.margin-bottom-20 { margin-bottom: 2.0rem; }
 .margin-top-15 {
     margin-top: 2.5rem;
 }

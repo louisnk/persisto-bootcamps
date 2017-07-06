@@ -14,7 +14,7 @@ What are we looking for?
 ### Mandatory
 - Minimum `1+ years experience` in some aspect of software engineering/web development
 - Able to confidently explain `flow control`, basic `asyncronous request handling` (callbacks), and basic `CSS properties`
-- Proficient in `English` or `Russian`, we don't want language barriers to impede the learning any more than it already will
+- Proficient in `English`, `Georgian` or `Russian`, we don't want language barriers to impede the learning any more than it already will
 - Previous experience mentoring in some capacity (not necessarily with code or kids)
 - Able to join us in Tbilisi for `>= 15 days`. (At least 3 days getting settled before they start working with kids)
 
@@ -25,4 +25,10 @@ What are we looking for?
 - Something really unique about them
 - Female/Not all white males from America
 - Digital nomad who can join us the entire 4 weeks.
+
+### Mentorship Traits
+- Excercising patience when working with students
+- Able to break down technical concepts into simple, easy-to-digest bits.
+- To be a collaborator in designing the curriculum to add maximal value; this could mean adapting in the middle of the course, and following a potentially promising path that secures the enthusiasm of the students.
+- Adaptable, warm, friendly.
 

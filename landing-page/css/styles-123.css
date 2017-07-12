@@ -34,7 +34,7 @@ hr.light {
 }
 
 a {
-    color: #a6c81b;
+    color: #D4AF37;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -42,7 +42,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #9c27c1;
+    color: #D4AF37;
     outline: 0;
 }
 
@@ -88,8 +88,10 @@ p {
 }
 
 .text-primary {
-    color: #a6c81b;
+    color: #D4AF37;
 }
+
+/*old text-primary #a6c81b;*/
 
 .modal-content {
     background-color: #1d1d1d;
@@ -122,7 +124,7 @@ footer {
 
 .navbar-header > .navbar-brand {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-    color: #a6c81b;
+    color: #d3d3d3;
     padding: 15px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
@@ -131,7 +133,7 @@ footer {
 
 .navbar-header > .navbar-brand:hover,
 .navbar-header > .navbar-brand:focus {
-    color: #8b27b0;
+    color: #D4AF37;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {

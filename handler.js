@@ -6,8 +6,8 @@ const config = require('./config/index.js');
 const extend = require('lodash.assignin');
 const isPlainObject = require('lodash.isplainobject');
 
-const templates = (mentor) => {
-  return mentor ? 2369182 : 2369262;
+const templates = (originator) => {
+  return !originator ? 8040543 : 8040542;
 }
 
 
@@ -16,21 +16,21 @@ class Service {
 
   }
 
-  prepEmail(person={}, toAddress='', mentor=false) {
+  prepEmail(person={}, toAddress='', originator=false) {
     let replyDate = new Date();
     replyDate.setDate(replyDate.getDate() + 7);
     let replyString = `${replyDate.getDate()}/${replyDate.getMonth() + 1}/${replyDate.getFullYear()}`;
 
     return {
-        "From": "louis@persisto.systems",
+        "From": "louis@persistolabs.com",
         "To": toAddress,
-        "TemplateId": templates(mentor),
+        "TemplateId": templates(originator),
         "TemplateModel": {
           "name": person.name,
           "support_email": config.emails.support,
-          "profile": person.profile,
+          "budget": person.budget,
           "email": person.email,
-          "additional": person.additional,
+          "description": person.description,
           "reply_by": replyString
         }
     };
@@ -76,15 +76,15 @@ module.exports.post = (event, context, callback) => {
   let name = params.name && params.name.split(/ '-/).join('') + '-' + new Date().getTime();
 
   let toSend = [
-    { email: params.email, mentor: true },
+    { email: params.email, originator: true },
     { email: config.emails.louis },
     { email: config.emails.misha }
   ].map((email, i) =>
-    service.prepEmail(params, email.email, email.mentor));
+    service.prepEmail(params, email.email, email.originator));
 
   console.log('Using params: ', params);
 
-  service.uploadToS3(params, name)
+  return service.uploadToS3(params, name)
     .then(done => {
       console.log('Sending emails...');
       return service.sendEmailBatch(toSend);
@@ -122,7 +122,7 @@ const formatRedirectSuccess = (sent) => {
     statusCode: 302,
     body: "",
     headers: {
-      "Location": "https://persisto.education/thankyou.html"
+      "Location": "https://persistolabs.com/"
     }
   }
 };

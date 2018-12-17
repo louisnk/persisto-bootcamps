@@ -1,13 +1,13 @@
-service: persisto-bootcamps
+service: persisto-labs-email
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs8.10
   memorySize: 128
-  stage: dev
-  profile: persisto-sls
+  stage: ${ opt:stage }
   region: us-east-1
-  deploymentBucket: persisto-bootcamps-deployments
+  deploymentBucket: persisto-deployments
+  profile: persisto
   timeout: 15
   environment:
     POSTMARK_KEY: ${ env:POSTMARK_KEY }
@@ -19,7 +19,8 @@ provider:
         - s3:PutObject
         - s3:ListObjects
       Resource:
-        - arn:aws:s3:::${ env:AWS_ACCOUNT_ID }/*
+        - arn:aws:s3:::persisto-labs-leads
+        - arn:aws:s3:::persisto-labs-leads/*
 
 # you can add packaging information here
 package:
@@ -31,28 +32,20 @@ package:
     - '*.spec.*'
     - v_env/**
 
+
+
 functions:
   post:
     handler: handler.post
     events:
       - http:
-          path: signup
+          path: /
           method: post
           queryParameters:
             email: $input.body('email')
             name: $input.body('name')
-            profile: $input.body('profile')
-            additional: $input.body('additional')
-
-  test:
-    handler: handler.test
-    events:
-      - http:
-          path: test
-          method: get
-          queryParameters:
-            message: $input.body('message')
-
+            budget: $input.body('budget')
+            description: $input.body('description')
 
 # resources:
 #   Resources:

@@ -16,16 +16,7 @@
     "url": "https://github.com/louisnk/persisto-bootcamps/issues"
   },
   "homepage": "https://github.com/louisnk/persisto-bootcamps#readme",
-  "devDependencies": {
-    "aws-sdk": "^2.80.0",
-    "chai": "^4.0.2",
-    "istanbul": "^0.4.5",
-    "mocha": "^3.4.2",
-    "nodemon": "^1.11.0",
-    "serverless": "^1.16.1",
-    "swagger": "^0.7.5",
-    "swagger-codegen": "^0.1.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "lodash.assignin": "^4.2.0",
     "lodash.isplainobject": "^4.0.6",

@@ -1,4 +1,4 @@
-service: persisto-labs-email
+service: persisto-org-email
 
 provider:
   name: aws
@@ -19,18 +19,21 @@ provider:
         - s3:PutObject
         - s3:ListObjects
       Resource:
-        - arn:aws:s3:::persisto-labs-leads
-        - arn:aws:s3:::persisto-labs-leads/*
+        - arn:aws:s3:::${ env:AWS_DEFAULT_BUCKET }
+        - arn:aws:s3:::${ env:AWS_DEFAULT_BUCKET }/*
 
 # you can add packaging information here
 package:
   include:
     # - '**/*.js'
     # - vendored/**
+    - 'handler.js'
+    - 'config/**'
   exclude:
     - '*.envrc'
     - '*.spec.*'
     - v_env/**
+    - org/**
 
 
 
@@ -44,7 +47,6 @@ functions:
           queryParameters:
             email: $input.body('email')
             name: $input.body('name')
-            budget: $input.body('budget')
             description: $input.body('description')
 
 # resources:

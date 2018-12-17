@@ -7,7 +7,7 @@ const extend = require('lodash.assignin');
 const isPlainObject = require('lodash.isplainobject');
 
 const templates = (originator) => {
-  return !originator ? 8040543 : 8040542;
+  return !originator ? 2369262 : 2369182;
 }
 
 
@@ -77,8 +77,7 @@ module.exports.post = (event, context, callback) => {
 
   let toSend = [
     { email: params.email, originator: true },
-    { email: config.emails.louis },
-    { email: config.emails.misha }
+    { email: config.emails.louis }
   ].map((email, i) =>
     service.prepEmail(params, email.email, email.originator));
 
@@ -122,7 +121,7 @@ const formatRedirectSuccess = (sent) => {
     statusCode: 302,
     body: "",
     headers: {
-      "Location": "https://persistolabs.com/"
+      "Location": "https://persisto.org/"
     }
   }
 };

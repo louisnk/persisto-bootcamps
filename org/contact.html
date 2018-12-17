@@ -34,7 +34,35 @@
   <div>
     <div class="w-container">
       <div class="form w-form">
-        <form id="email-form" name="email-form" data-name="Email Form"><label for="name" class="field">Name</label><input type="text" id="name" name="name" data-name="Name" placeholder="Enter your name" maxlength="256" class="input w-input"><label for="email" class="field">Email Address</label><input type="email" class="input w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email address" id="email" required=""><label for="field" class="field">Message</label><textarea id="field" name="field" placeholder="Example Text" maxlength="5000" class="input text-area w-input"></textarea><input type="submit" value="Submit" data-wait="Please wait..." class="button submit w-button"></form>
+        <form id="email-form"
+          name="email-form"
+          data-name="Email Form"
+          action="https://a3havq146m.execute-api.us-east-1.amazonaws.com/prod"
+          method="POST">
+            <label for="name" class="field">Name</label>
+            <input type="text"
+              id="name"
+              name="name"
+              data-name="Name"
+              placeholder="Enter your name"
+              maxlength="256"
+              class="input w-input">
+
+            <label for="email" class="field">Email Address</label>
+            <input type="email" class="input w-input"
+              maxlength="256" name="email"
+              data-name="Email"
+              placeholder="Enter your email address"
+              id="email" required="">
+
+            <label for="description" class="field">Message</label>
+            <textarea id="description" name="description"
+              placeholder="Hello, my name is... I want to talk to you because..." maxlength="5000"
+              class="input text-area w-input">
+            </textarea>
+            <input type="submit" value="Submit"
+              data-wait="Please wait..." class="button submit w-button">
+          </form>
         <div class="success w-form-done">
           <p class="success-message">Thank you! We&#x27;ll be in touch shortly.</p>
         </div>

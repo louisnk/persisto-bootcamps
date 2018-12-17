@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Persisto.education</title>
+    <link>localhost:1313/</link>
+    <description>Recent content on Persisto.education</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comment Example</title>
+      <link>localhost:1313/blog/comment-example/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/comment-example/</guid>
+      <description>Example of a post with comments using Disqus.</description>
+    </item>
+    
+    <item>
+      <title>No Comments Allowed</title>
+      <link>localhost:1313/blog/no-comments-allowed/</link>
+      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/no-comments-allowed/</guid>
+      <description>This is an example of a blog post where comments are not allowed.</description>
+    </item>
+    
+    <item>
+      <title>No Sidebar</title>
+      <link>localhost:1313/blog/no-sidebar/</link>
+      <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/no-sidebar/</guid>
+      <description>An example of a post without a sidebar.
++++ hidesidebar = true +++  </description>
+    </item>
+    
+    <item>
+      <title>Third post</title>
+      <link>localhost:1313/blog/third-post/</link>
+      <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/third-post/</guid>
+      <description>Testing content</description>
+    </item>
+    
+    <item>
+      <title>Second post</title>
+      <link>localhost:1313/blog/second-post/</link>
+      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/second-post/</guid>
+      <description>Testing content</description>
+    </item>
+    
+    <item>
+      <title>First post</title>
+      <link>localhost:1313/blog/first-post/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/first-post/</guid>
+      <description>Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo. Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante. Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus. Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor hendrerit libero placerat.</description>
+    </item>
+    
+    <item>
+      <title>Old post</title>
+      <link>localhost:1313/blog/old-post-1/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/old-post-1/</guid>
+      <description>Old post to show pagination</description>
+    </item>
+    
+    <item>
+      <title>Old post</title>
+      <link>localhost:1313/blog/old-post-2/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/old-post-2/</guid>
+      <description>Old post to show pagination</description>
+    </item>
+    
+    <item>
+      <title>Old post</title>
+      <link>localhost:1313/blog/old-post-3/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/old-post-3/</guid>
+      <description>Old post to show pagination</description>
+    </item>
+    
+    <item>
+      <title>Old post</title>
+      <link>localhost:1313/blog/old-post-4/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/old-post-4/</guid>
+      <description>Old post to show pagination</description>
+    </item>
+    
+    <item>
+      <title>Old post</title>
+      <link>localhost:1313/blog/old-post-5/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/old-post-5/</guid>
+      <description>Old post to show pagination</description>
+    </item>
+    
+    <item>
+      <title>Old post</title>
+      <link>localhost:1313/blog/old-post/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/blog/old-post/</guid>
+      <description>Old post to show pagination</description>
+    </item>
+    
+    <item>
+      <title>3 Portfolio item</title>
+      <link>localhost:1313/portfolio/3-portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/portfolio/3-portfolio/</guid>
+      <description>Testing content</description>
+    </item>
+    
+    <item>
+      <title>Portfolio item</title>
+      <link>localhost:1313/portfolio/first-portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/portfolio/first-portfolio/</guid>
+      <description>Testing content</description>
+    </item>
+    
+    <item>
+      <title>Portfolio item</title>
+      <link>localhost:1313/portfolio/2-portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/portfolio/2-portfolio/</guid>
+      <description>Testing content</description>
+    </item>
+    
+    <item>
+      <title>Portfolio item</title>
+      <link>localhost:1313/portfolio/4-portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/portfolio/4-portfolio/</guid>
+      <description>Testing content</description>
+    </item>
+    
+    <item>
+      <title>Portfolio item</title>
+      <link>localhost:1313/portfolio/5-portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/portfolio/5-portfolio/</guid>
+      <description>Testing content</description>
+    </item>
+    
+    <item>
+      <title>Portfolio item</title>
+      <link>localhost:1313/portfolio/6-portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>localhost:1313/portfolio/6-portfolio/</guid>
+      <description>Testing content</description>
+    </item>
+    
+  </channel>
+</rss>
